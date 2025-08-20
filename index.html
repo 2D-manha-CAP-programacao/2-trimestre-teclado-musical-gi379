@@ -1,26 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-BR"> <!-- Define a linguagem da página -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.8">
-    <title>document</title>
-    <link rel="stylesheet"href="style.css">
-    <link rel="stylesheet"href="reset.css">
-</head>
+    <meta charset="UTF-8"> <!-- Codificação de caracteres UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
 
+    <title>AnimeQ</title> <!-- Título da aba -->
+
+    <!-- Importação da fonte Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Ícone da aba -->
+    <link rel="icon" type="image/png" href="img/4043233-anime-away-face-no-nobody-spirited_113254.png">
+
+    <!-- Reset de estilos e CSS principal -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1> teclado musical </h1>
-    <h2>intros de animes</h2>
+
+    <!-- Título principal -->
+    <h1>Aberturas de animes</h1>
+
+    <!-- Container das teclas -->
     <section class="teclado">
-        <button class="Tecla Tecla-son-1"> <img src="imagem/attack.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-2"> <img src="imagem/cavalheiros.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-3"> <img src="imagem/Dandadan.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-4"> <img src="imagem/demon.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-5"> <img src="imagem/fairy tail.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-6"> <img src="imagem/haikyui.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-7"> <img src="imagem/hunter x hunter.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-8"> <img src="imagem/jujutsu.jpeg""descriçãoimagem">
-        <button class="Tecla Tecla-son-9"> <img src="imagem/onepiece.jpeg""descriçãoimagem">
+        <!-- Cada botão contém uma imagem ilustrativa -->
+        <button class="tecla tecla_som1"><img src="img/attack.jpeg" alt="Som 1"></button>
+        <button class="tecla tecla_som2"><img src="img/cavalheiros.jpeg" alt="Som 2"></button>
+        <button class="tecla tecla_som3"><img src="img/Dandadan.jpeg" alt="Som 3"></button>
+
+        <button class="tecla tecla_som4"><img src="img/demon.jpeg" alt="Som 4"></button>
+        <button class="tecla tecla_som5"><img src="img/fairy tail.jpeg" alt="Som 5"></button>
+        <button class="tecla tecla_som6"><img src="img/haikyuy.jpeg" alt="Som 6"></button>
+
+        <button class="tecla tecla_som7"><img src="img/hunter x hunter" alt="Som 7"></button>
+        <button class="tecla tecla_som8"><img src="img/jujutsu.jpeg" alt="Som 8"></button>
+        <button class="tecla tecla_som9"><img src="img/onepiece.jpeg" alt="Som 9"></button>
     </section>
+
+    <!-- Áudios correspondentes aos botões -->
+    <audio src="./song/intro_attackontitan (mp3cut.net).mp3" id="som_tecla_som1"></audio>
+    <audio src="./song/intro_cavalheiros (mp3cut.net).mp3" id="som_tecla_som2"></audio>
+    <audio src="./song/intro_dandadan (mp3cut.net).mp3" id="som_tecla_som3"></audio>
+    <audio src="./song/intro_demon (mp3cut.net).mp3" id="som_tecla_som4"></audio>
+    <audio src="./song/intro_fairy (mp3cut.net).mp3" id="som_tecla_som5"></audio>
+    <audio src="./song/intro_haykiuu (mp3cut.net).mp3" id="som_tecla_som6"></audio>
+    <audio src="./song/intro_hynter.mp3" id="som_tecla_som7"></audio>
+    <audio src="./song/intro_jujutsu (mp3cut.net).mp3" id="som_tecla_som8"></audio>
+    <audio src="./song/intro_onepiece (mp3cut.net).mp3" id="som_tecla_som9"></audio>
+
+    <!-- Script principal -->
+    <script src="main.js"></script>
 </body>
 </html>
